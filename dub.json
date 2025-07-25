@@ -1,0 +1,23 @@
+{
+	"name": "dlang-at",
+	"description": "Web application powering dlang.at",
+
+	"license": "BSL-1.0",
+	"copyright": "Copyright © 2025  Elias Batek",
+
+	"authors": [
+		"Mindy Batek (0xEAB)"
+	],
+
+	"targetPath": "bin",
+
+	"sourcePaths": ["src"],
+	"importPaths": ["src"],
+	"stringImportPaths": ["src/data"],
+	"excludedSourceFiles": ["src/arsd/*"],
+
+	"dependencies": {
+		"arsd-official:cgi": "~>12.0.0",
+		"arsd-official:ini": "*"
+	}
+}

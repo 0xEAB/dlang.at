@@ -1,0 +1,4 @@
+.dub
+dub.selections.json
+/source/arsd/cgi.d
+/bin/
