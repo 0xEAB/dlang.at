@@ -110,6 +110,5 @@ Handled tryShortURL(Cgi cgi) {
 void sendNotFound(Cgi cgi) {
 	cgi.setResponseStatus(404);
 	cgi.setResponseContentType(contentTypePlaintext);
-	cgi.write("The requested page could not be found: ");
-	cgi.write(cgi.pathInfo);
+	cgi.write("The requested page could not be found.");
 }
