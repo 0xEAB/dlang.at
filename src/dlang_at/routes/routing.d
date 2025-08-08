@@ -93,7 +93,7 @@ Handled checkRequestMethod(Cgi cgi) {
 Handled tryShortURL(Cgi cgi) {
 	import dlang_at.routes.shorturl;
 
-	const shortURL = resolveShortURL(cgi.pathInfo);
+	const shortURL = resolveShortURL(cgi.requestUri);
 	if (!shortURL.found) {
 		return Handled.no;
 	}
